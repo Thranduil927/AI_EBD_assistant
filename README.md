@@ -20,6 +20,10 @@ Use Cases
 🔸 Project Planning: Use AI-driven insights to refine project objectives.
 🔸 Literature Review: Get relevant academic sources in a fraction of the time.
 
+ Please install:
+ pip install streamlit openai langchain faiss-cpu chromadb duckduckgo-search
+
+
 References
 1. Zeng Y. Environment-based design (EBD)[C]//International Design Engineering Technical Conferences and Computers and Information in Engineering Conference. 2011, 54860: 237-250.
 2. Zeng Y. Environment-based design (EBD): A methodology for transdisciplinary design[J]. Journal of Integrated Design and Process Science, 2015, 19(1): 5-24.
