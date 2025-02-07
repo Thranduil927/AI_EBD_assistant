@@ -4,13 +4,16 @@ from langchain.chat_models import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
 from langchain.prompts import PromptTemplate
 from langchain.tools import DuckDuckGoSearchRun
+from dotenv import load_dotenv
+from langchain_community.chat_models import ChatOpenAI
+from langchain_community.tools import DuckDuckGoSearchRun
 
 # Set API Key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+load_dotenv()
+openai.api_key = os.getenv("sk-svcacct-Z3R7ZOxP9wVmORXX0-wQBe9hI-uyC8lLk3HBN8XBn7FUlSR_nru9SFzaapaF5VaqT3BlbkFJou_bS4g4JUXklYcIRSRK3AcZnwXvcBD30BljWekXyFXT1Er1LhfXDpdbt-qO6iYA")
 
 # Initialize GPT-4 model
-llm = ChatOpenAI(model_name="gpt-4")
-
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="sk-svcacct-Z3R7ZOxP9wVmORXX0-wQBe9hI-uyC8lLk3HBN8XBn7FUlSR_nru9SFzaapaF5VaqT3BlbkFJou_bS4g4JUXklYcIRSRK3AcZnwXvcBD30BljWekXyFXT1Er1LhfXDpdbt-qO6iYA")
 # Initialize search tool
 search_tool = DuckDuckGoSearchRun()
 
