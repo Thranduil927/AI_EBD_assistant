@@ -1,57 +1,33 @@
-# AI-EBD Assistant
+# README.md (Updated for Llama 3 & RAG)
 
-## Intelligent Research Assistant for Environment-Based Design (EBD)
+## 📘 AI-EBD Research Assistant (Llama 3 + RAG)
+AI-EBD Research Assistant is an advanced tool designed to generate research questions and analyze behavior using the EBD methodology and the TASKS framework. It integrates Llama 3 with RAG (Retrieval-Augmented Generation) for enhanced insights.
 
-AI-EBD Assistant is an advanced research assistant designed to help researchers generate high-quality research questions based on the **Environment-Based Design (EBD) methodology**. This tool enhances academic research efficiency by leveraging **GPT-4** and **LangChain** to assist in research question generation, AI-powered insights, and literature recommendations.
+### 🚀 Key Features:
+✅ **RAG-Enhanced Research Question Generation** - Produces high-quality research questions using EBD principles.
+✅ **TASKS-Based Behavior Analysis** - Answers research questions while analyzing human performance through the TASKS framework.
+✅ **Smart Keyword Extraction** - Generates academic search keywords for literature searches.
+✅ **Paper Recommendations with RAG** - Finds relevant research papers from the provided keywords.
+✅ **Interactive Web Interface** - Built with **Streamlit** for a smooth research experience.
 
-🔗 **Learn more about EBD methodology**: [ASME Digital Collection](https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings/IDETC-CIE2011/54860/237/354151)
+### 🛠️ Tech Stack:
+- **Backend:** Python, Llama 3, LlamaIndex (for RAG)
+- **Frontend:** Streamlit (Interactive UI)
+- **Retrieval:** LlamaIndex (RAG on EBD and TASKS documents)
 
----
-
-## Key Features
-
-✅ **EBD-Driven Research Question Generation** – Automatically formulates research questions based on project topics following EBD principles (*Environment Analysis, Conflict Identification, Solution Generation*).  
-✅ **AI-Powered Question Answering** – Utilizes **GPT-4** to provide insightful responses to research questions.  
-✅ **Automated Keyword Extraction** – Generates precise search queries to enhance literature search efficiency.  
-✅ **Research Paper Recommendation** – Retrieves strongly relevant academic papers using web search APIs like **Google Scholar** and **Semantic Scholar**.  
-✅ **User-Friendly Web Interface** – Built with **Streamlit**, providing an interactive and intuitive research experience.  
-
----
-
-## Tech Stack
-
-- **Backend**: Python, LangChain, GPT-4, FAISS (Vector Database)  
-- **Frontend**: Streamlit (Web Interface)  
-- **Data Retrieval**: DuckDuckGo API, Google Scholar Scraper  
-- **Deployment**: Docker, Cloud Hosting  
-
----
-
-## Use Cases
-
-🔹 **Academic Research** – Generate structured research questions for thesis or dissertation work.  
-🔹 **Project Planning** – Use AI-driven insights to refine research objectives and scope.  
-🔹 **Literature Review** – Quickly discover relevant academic sources to support research findings.  
-
----
-
-## Installation
-
-To use AI-EBD Assistant, install the required dependencies:
-```sh
-pip install streamlit openai langchain faiss-cpu chromadb duckduckgo-search
+### 💻 Installation:
+```bash
+pip install streamlit llama-cpp-python llama-index dotenv
 ```
 
+### 📂 Running the App:
+```bash
+streamlit run app.py
+```
+
+### 📚 References:
+1. Zeng Y. *Environment-Based Design (EBD): A Methodology for Transdisciplinary Design*. JIDPS, 2015.
+2. Yang J. *Implementation Barriers: A TASKS Framework*. JIDPS, 2021.
+
 ---
-
-## References
-
-1. Zeng Y. *Environment-Based Design (EBD)* [C] // International Design Engineering Technical Conferences and Computers and Information in Engineering Conference. **2011**, **54860**: 237-250.  
-2. Zeng Y. *Environment-Based Design (EBD): A Methodology for Transdisciplinary Design* [J]. Journal of Integrated Design and Process Science, **2015**, **19(1)**: 5-24.  
-3. Sun X, Zeng Y, Liu W. *Formalization of Design Chain Management Using Environment-Based Design (EBD) Theory* [J]. Journal of Intelligent Manufacturing, **2013**, **24**: 597-612.  
-4. Yang J, Dou Y, Zeng Y. *Environment-Based Design (EBD): Using Only Necessary Knowledge for Designer Creativity* [J]. Proceedings of the Design Society, **2023**, **3**: 1675-1684.  
-
----
-
-### 🚀 Start Your Research with AI-EBD Assistant Today!
-
+✅ Start your research with AI-EBD Assistant today!
